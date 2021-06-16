@@ -18,5 +18,10 @@ public class UserServices {
 	{
 		return "Request in Process Location . "+name+  "ID    "+id;
 	}
+	@RequestMapping(value = "/sqrt/{id}",method = RequestMethod.GET)
+	public String geSqrt(@PathVariable Integer id )
+	{
+		return id+"*"+id+  " = "+(id*id);
+	}
 
 }
