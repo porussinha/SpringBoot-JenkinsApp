@@ -13,5 +13,10 @@ public class UserServices {
 	{
 		return "Welcome to Mr. "+name;
 	}
+	@RequestMapping(value = "/get/{name}/{id}",method = RequestMethod.GET)
+	public String getData(@PathVariable String name,@PathVariable Integer id )
+	{
+		return "Request in Process Location . "+name+  "ID    "+id;
+	}
 
 }
